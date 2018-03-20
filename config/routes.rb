@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   end
 
+  root 'welcome#index'
+
 
   match "*unmatched_route", to: "application#not_found", via: :all
 
